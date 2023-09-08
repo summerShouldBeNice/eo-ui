@@ -20,7 +20,7 @@
       <!--遮罩内的logo-->
       <div class="hello-logo" v-show="initHelloBoxVisible">
 
-        <img src="../assets/logo.png" alt="logo">
+        <img src="assets/logo.png" alt="logo">
 
       </div>
 
@@ -169,21 +169,40 @@
 
   // eslint-disable-next-line no-unused-vars
   import {ref, onMounted} from "vue";
+  import {generateFakeData} from "./fakerData/FakerUtil";
 
   // let flag = ref(true)
 
-  let fsetList = ref([
-    {
-      id: 1,
-      title: "用户中心",
-      imgUrl: "/path"
-    },
-    {
-      id: 2,
-      title: "组件中心",
-      imgUrl: "/path"
-    }
-  ])
+  // let fsetList = ref([
+  //   {
+  //     id: 1,
+  //     title: "用户中心",
+  //     imgUrl: "/path"
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "组件中心",
+  //     imgUrl: "/path"
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "组件中心",
+  //     imgUrl: "/path"
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "组件中心",
+  //     imgUrl: "/path"
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "组件中心",
+  //     imgUrl: "/path"
+  //   },
+  // ])
+
+
+  let fsetList = generateFakeData(10);
 
   let shadeVisible =ref(false)
 

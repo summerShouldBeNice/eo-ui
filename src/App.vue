@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <InitWelcome />
+    <!--<InitWelcome />-->
+    <TodoHome/>
   </div>
 </template>
 
 <script setup>
-  import InitWelcome from './components/InitWelcome.vue'
-
+  // import InitWelcome from './components/InitWelcome.vue'
+  import TodoHome from "@/views/TodoHome/TodoHome.vue";
 </script>
 
 <style>
