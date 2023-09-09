@@ -45,11 +45,11 @@
         </template>
 
         <el-menu-item-group>
-          <el-menu-item index="2-1">todo...</el-menu-item>
+          <el-menu-item index="2-1">个人配置</el-menu-item>
         </el-menu-item-group>
 
         <el-menu-item-group>
-          <el-menu-item index="2-2">正在开发中...</el-menu-item>
+          <el-menu-item index="2-2">todo...</el-menu-item>
         </el-menu-item-group>
 
       </el-sub-menu>

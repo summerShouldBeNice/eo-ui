@@ -63,6 +63,15 @@
 
     <div class="target-wrapper">
 
+    <!--  <el-table :data="targetTestData" stripe style="width: 100%">-->
+    <!--    <el-table-column prop="id" label="事件编号" width="180" />-->
+    <!--    <el-table-column prop="targetEvent" label="目标事件" width="180" />-->
+    <!--    <el-table-column prop="createTime" label="创建时间" />-->
+    <!--  </el-table>-->
+
+
+
+
       <div class="target-list" >
 
         <el-checkbox-group
@@ -124,6 +133,10 @@ let targetStatusOption = ref([
   {
     value: '1',
     label: '已完成'
+  },
+  {
+    value: '3',
+    label: '全部'
   }
 ])
 

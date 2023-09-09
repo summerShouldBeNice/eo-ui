@@ -19,7 +19,7 @@
 
       </el-header>
       <el-container>
-        <el-aside width="100%">
+        <el-aside width="300px">
           <TodoSideBar></TodoSideBar>
         </el-aside>
         <el-main>
