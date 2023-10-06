@@ -25,7 +25,8 @@
         <el-main>
           <!--<el-empty description="description" />-->
           <!--<PersonalTodo></PersonalTodo>-->
-          <PersonalTarget></PersonalTarget>
+          <!--<PersonalTarget></PersonalTarget>-->
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -37,7 +38,7 @@
 import TodoSideBar from "@/components/TodoSideBar.vue";
 import UserInfo from "@/components/UserInfo.vue";
 // import PersonalTodo from "@/views/TodoHome/PersonalTodo.vue";
-import PersonalTarget from "@/views/TodoHome/PersonalTarget.vue";
+// import PersonalTarget from "@/views/TodoHome/PersonalTarget.vue";
 
 </script>
 

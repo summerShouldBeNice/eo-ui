@@ -266,7 +266,8 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/2.jpg");
+  /*background-image: url("../assets/2.jpg");*/
+  background-image: require('../assets/2.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
