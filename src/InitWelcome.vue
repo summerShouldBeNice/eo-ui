@@ -171,37 +171,6 @@
   import {ref, onMounted} from "vue";
   import {generateFakeData} from "./fakerData/FakerUtil";
 
-  // let flag = ref(true)
-
-  // let fsetList = ref([
-  //   {
-  //     id: 1,
-  //     title: "用户中心",
-  //     imgUrl: "/path"
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "组件中心",
-  //     imgUrl: "/path"
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "组件中心",
-  //     imgUrl: "/path"
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "组件中心",
-  //     imgUrl: "/path"
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "组件中心",
-  //     imgUrl: "/path"
-  //   },
-  // ])
-
-
   let fsetList = generateFakeData(10);
 
   let shadeVisible =ref(false)
@@ -235,6 +204,8 @@
     loginVisible.value = !loginVisible.value
     initHelloBoxVisible.value = !initHelloBoxVisible.value
   }
+
+
 
   let changeRegisterVisible = () => {
     loginVisible.value = !loginVisible.value

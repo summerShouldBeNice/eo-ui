@@ -16,7 +16,7 @@ const routes = [
         redirect: '/index',
         children: [
             {
-                path:'/index',
+                path:'index',
                 name:'InitWelcome',
                 component: InitWelcome,
             },
@@ -36,7 +36,7 @@ const routes = [
                         }
                     },
                     {
-                        path: 'todo',
+                        path: 'personal',
                         name: 'PersonalTodo',
                         component: PersonalTodo,
                         meta: {

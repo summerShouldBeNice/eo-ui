@@ -5,7 +5,7 @@ export function generateFakeData(sum) {
     for (let i = 1; i <= sum; i++) {
         fakeData.push({
             id: i,
-            title: faker.lorem.words(2), // 生成两个随机词作为标题
+            title: faker.lorem.words(1), // 生成两个随机词作为标题
             imgUrl: faker.image.imageUrl(), // 生成随机图片URL
         });
     }

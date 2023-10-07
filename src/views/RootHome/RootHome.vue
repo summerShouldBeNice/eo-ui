@@ -23,7 +23,7 @@
           <RootSideBar></RootSideBar>
         </el-aside>
         <el-main>
-          <RootUserManage></RootUserManage>
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
