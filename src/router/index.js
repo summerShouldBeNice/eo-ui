@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+import Main from "@/Main.vue";
 import InitWelcome from "@/InitWelcome.vue";
 import TodoHome from "@/views/TodoHome/TodoHome.vue";
 import PersonalTarget from "@/views/TodoHome/PersonalTarget.vue";
@@ -9,67 +10,67 @@ import PasswordHome from "@/views/PasswordHome/PasswordHome.vue";
 
 const routes = [
     {
-        path:'/',
-        name:'InitWelcome',
-        component: InitWelcome,
+        path: '/',
+        name: 'Main',
+        component: Main,
         redirect: '/index',
         children: [
-            // InitWelcome
             {
-                path: 'index',
-                name: 'InitWelcome',
+                path:'/index',
+                name:'InitWelcome',
                 component: InitWelcome,
             },
-        ]
-    },
-    // TodoHome
-    {
-        path: 'todo',
-        name: 'TodoHome',
-        component: TodoHome,
-        redirect: 'todo/target',
-        children: [
-            {
-                path: 'target',
-                name: 'PersonalTarget',
-                component: PersonalTarget,
-                meta: {
-                    title: '目标管理'
-                }
-            },
+            // TodoHome
             {
                 path: 'todo',
-                name: 'PersonalTodo',
-                component: PersonalTodo,
-                meta: {
-                    title: '待办管理'
-                }
+                name: 'TodoHome',
+                component: TodoHome,
+                redirect: 'todo/target',
+                children: [
+                    {
+                        path: 'target',
+                        name: 'PersonalTarget',
+                        component: PersonalTarget,
+                        meta: {
+                            title: '目标管理'
+                        }
+                    },
+                    {
+                        path: 'todo',
+                        name: 'PersonalTodo',
+                        component: PersonalTodo,
+                        meta: {
+                            title: '待办管理'
+                        }
+                    },
+                ]
             },
-        ]
-    },
-    // RootHome
-    {
-        path: 'root',
-        name: 'RootHome',
-        component: RootHome,
-        redirect: 'root/userManage',
-        children: [
+            // RootHome
             {
-                path: 'userManage',
-                name: 'RootUserManage',
-                component: RootUserManage,
-                meta: {
-                    title: '用户管理'
-                }
+                path: 'root',
+                name: 'RootHome',
+                component: RootHome,
+                redirect: 'root/userManage',
+                children: [
+                    {
+                        path: 'userManage',
+                        name: 'RootUserManage',
+                        component: RootUserManage,
+                        meta: {
+                            title: '用户管理'
+                        }
+                    },
+                ]
+            },
+            // PasswordHome
+            {
+                path: 'password',
+                name: 'PasswordHome',
+                component: PasswordHome,
             },
         ]
-    },
-    // PasswordHome
-    {
-        path: 'password',
-        name: 'PasswordHome',
-        component: PasswordHome,
-    },
+    }
+
 ]
 
 const router = createRouter({
