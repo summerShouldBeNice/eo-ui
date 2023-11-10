@@ -6,6 +6,7 @@ import PersonalTarget from "@/views/TodoHome/PersonalTarget.vue";
 import PersonalTodo from "@/views/TodoHome/PersonalTodo.vue";
 import RootHome from "@/views/RootHome/RootHome.vue";
 import RootUserManage from "@/views/RootHome/RootUserManage.vue";
+import RootRoleManage from "@/views/RootHome/RootRoleManage.vue";
 import PasswordHome from "@/views/PasswordHome/PasswordHome.vue";
 
 const routes = [
@@ -58,6 +59,14 @@ const routes = [
                         component: RootUserManage,
                         meta: {
                             title: '用户管理'
+                        }
+                    },
+                    {
+                        path: 'roleManage',
+                        name: 'RootRoleManage',
+                        component: RootRoleManage,
+                        meta: {
+                            title: '角色管理'
                         }
                     },
                 ]

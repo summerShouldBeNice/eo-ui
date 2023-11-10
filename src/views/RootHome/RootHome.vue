@@ -6,13 +6,13 @@
         <el-row>
           <el-col :span="8">
             <div class="logo">
-              el-header
+              <HeaderLogo/>
             </div>
           </el-col>
           <el-col :span="8">
 
           </el-col>
-          <el-col :span="8">
+          <el-col :span="8" class="col-left">
             <UserInfo/>
           </el-col>
         </el-row>
@@ -34,6 +34,7 @@
 import RootSideBar from "@/components/RootSideBar.vue";
 import UserInfo from "@/components/UserInfo.vue";
 import RootUserManage from "@/views/RootHome/RootUserManage.vue";
+import HeaderLogo from "@/components/HeaderLogo.vue";
 
 
 </script>
@@ -49,6 +50,7 @@ import RootUserManage from "@/views/RootHome/RootUserManage.vue";
 }
 .el-header {
   border-bottom: 1px solid #f4f6f9;
+  height: 60px;
 }
 .el-container {
   height: 100%;
@@ -65,6 +67,13 @@ import RootUserManage from "@/views/RootHome/RootUserManage.vue";
 .el-empty {
   background-color: #fff;
   margin: 10px;
+  height: 100%;
+}
+.el-row {
+  height: 100%;
+}
+.logo {
+  /*background-color: #999;*/
   height: 100%;
 }
 </style>
